@@ -53,3 +53,27 @@ TextStyle get headingStyle{
 
   );
 }
+TextStyle get titleStyle{
+  return GoogleFonts.lato(
+      textStyle: TextStyle(
+          fontSize: 17,
+          fontWeight: FontWeight.w400,
+          color: Get.isDarkMode?Colors.white:Colors.black
+
+      )
+
+
+  );
+}
+TextStyle get subtitleStyle{
+  return GoogleFonts.lato(
+      textStyle: TextStyle(
+          fontSize: 13,
+          fontWeight: FontWeight.bold,
+          color: Get.isDarkMode?Colors.grey[100]:Colors.grey[600]
+
+      )
+
+
+  );
+}

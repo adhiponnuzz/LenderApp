@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
+import 'package:lenderapp/screens/add_taskbar.dart';
 import 'package:lenderapp/screens/theme.dart';
 import '../sevices/themeservice.dart';
 import '../widgets/button.dart';
@@ -19,6 +20,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   DateTime _selectedDate = DateTime.now();
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBar(),
@@ -93,7 +95,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          MyButton(label: "+ Add Task", onTap: ()=>null)
+          MyButton(label: "+ Add Task", onTap: ()=>Get.to(AddTaskScreen()))
         ],
       ),
     );
